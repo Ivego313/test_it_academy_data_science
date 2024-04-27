@@ -1,8 +1,8 @@
 def calculate_cosine_difference(vector_a: list, vector_b: list):
     if len(vector_a) != len(vector_b):
-        print("Vectors have different dimensionality!")
+        print(f"Vectors have different dimensionality! Vector_a length: {len(vector_a)}, vector_b length: {len(vector_b)}.")
         return
-    elif len(vector_a) == 0:
+    if len(vector_a) == 0:
         print("Vectors must be not zero vectors!")
         return
     dot_product = sum(vector_a[i] * vector_b[i] for i in range(len(vector_a)))
